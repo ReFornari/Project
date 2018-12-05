@@ -1,0 +1,54 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content-type='width=device-width')
+    title Scuba Diving | Welcome
+    link(rel='stylesheet', href='app.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='js/script.js')
+  body
+    header.top
+      .container
+        #logo
+          a(href='index.html')
+            img(src='logo.png', height='80', width='100')
+        nav.navbar
+          ul
+            li.current
+              a.navButton(href='/') Home
+            li
+              a.navButton(href='/courses') Courses
+            li
+              a.navButton(href='/membership') Membership
+            li
+              a.navButton(href='/contact') Contact
+    section#showcase
+      .container
+        img.homeImage(src='logo2.jpg')
+    section#newsletter
+      .container
+        h1 Our Services
+        blockquote.blockquote
+          | It’s not about warm water, crystal-clear visibility or sunbathing in the surface interval. It’s about the challenge, the excitement of watching a shadow slowly resolve into a wreck, the pleasure of discovery, and not forgetting… it’s enjoying steaming hot tea and bacon butties like never before.
+    section#boxes
+      .container
+        .box
+          img(src='pic1.jpg')
+          h3 Diving
+          p
+            | It's the perfect way to experience the
+            | feeling of weightlessness and the excitement of breathing underwater for the first time.
+        .box
+          img(src='pic3.jpg')
+          h3 Pool Sessions
+          p
+            | Scuba diving in a swimming pool allow you to keep your physical condition, instead of stop your activity in the winter...
+        .box
+          img(src='pic2.jpg')
+          h3 Snorkelling
+          p
+            | It is accessible to anyone regardless of age and does not require expensive or complicated equipment. .
+    footer
+      p © 2018 Scuba, Copyright
+
