@@ -8,7 +8,7 @@ app.use(express.static("images"));
 
 
 app.get('/', function(req, res){
-res.sendFile ('index.jade', {root:VIEWS});
+res.render('index.jade', {root:VIEWS});
 console.log ("Home Page");
 });
 
