@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content-type="width=device-width">
+	<title>Scuba Diving | Welcome</title>
+	<link rel="stylesheet" href="app.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+<header class="top">
+	<div class="container">
+        <div id="logo">
+            <a href="index.html"><img src="logo.png" height="80" width="100"></a>
+        </div>
+<nav class="navbar">
+	<ul>
+		<li class="current"><a href="/" class="navButton">Home</a></li>
+		<li><a href="/" class="navButton">Courses</a></li>
+		<li><a href="/" class="navButton">Membership</a></li>
+		<li><a href="/" class="navButton">Contact</a></li>
+	</ul>
+</nav>
+</div>	
+</header>
+  <section id="showcase">
+	<div class="container">
+		<img src="logo1.jpg" class="homeImage">		
+	</div>
+</section>
+
+	<div class="mainCon">
+		<div class="addressCon">
+			<h2>Our Address : </h2>
+			<br>
+			<span>Royal Hibernian Way</span>			
+			<br>
+			<span>Dawson St</span>
+			<br>
+			<span>Dublin 2</span>
+			<br>
+		</div>
+		<div class="mapCon">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.099106869262!2d-6.260656384006296!3d53.3414820827765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9beb1ac993%3A0x12f6b356113ecc43!2sRoyal+Hibernian+Way%2C+Dawson+St%2C+Dublin+2!5e0!3m2!1sen!2sie!4v1523665353603" allowfullscreen></iframe>
+		</div>
+	</div>
+
+	<br>
+	<br>
+	
+	<form name="form-page" action="index.html" method="post">
+	
+		<h3 class="contactHeader">Please fill in below:</h3>
+		<h4>* Mandatory</h4>
+
+		<div class="mainFormCon">
+			<div class="formCon">
+
+				<div class="labelCon">
+					<label for="Fname">First Name:</label>
+				    <input type="text" id="Fname" name="user_Fname">
+				</div>
+				
+				<br>
+
+				<div class="labelCon">
+				    <label for="Lname">Last Name:</label>
+				    <input type="text" id="Lname" name="user_Lname">
+				</div>
+
+				<br>
+
+				<div class="labelCon">
+				    <label for="mail" id="email">* E-mail:</label>
+				    <input type="email" id="mail" class="email" name="user_email">
+				</div>
+			</div>
+
+
+			<div class="formCon">
+
+				<div class="labelCon">
+					<label for="address">Address:</label>
+				    <input type="text" id="address" name="user_address">
+				</div>
+				
+				<br>
+
+				<div class="labelCon">
+				    <label for="city">City:</label>
+				    <input type="text" id="city" name="user_city">
+				</div>
+
+				<br>
+
+				<div class="labelCon">
+					<label for="county">County:</label>
+					<select name="county">
+						<option value="#" selected></option>
+						<option value="antrim">Antrim</option>
+						<option value="armagh">Armagh</option>
+						<option value="carlow">Carlow</option>
+						<option value="cavan">Cavan</option>
+						<option value="clare">Clare</option>
+						<option value="cork">Cork</option>
+						<option value="derry">Derry</option>
+						<option value="donegal">Donegal</option>
+						<option value="down">Down</option>
+						<option value="dublin">Dublin</option>
+						<option value="fermanagh">Fermanagh</option>
+						<option value="galway">Galway</option>
+						<option value="kerry">Kerry</option>
+						<option value="kildare">Kildare</option>
+						<option value="kilkenny">Kilkenny</option>
+						<option value="laois">Laois</option>
+						<option value="leitrim">Leitrim</option>
+						<option value="limerick">Limerick</option>
+						<option value="longford">Longford</option>
+						<option value="louth">Louth</option>
+						<option value="mayo">Mayo</option>
+						<option value="meath">Meath</option>
+						<option value="monaghan">Monaghan</option>
+						<option value="offaly">Offaly</option>
+						<option value="roscommon">Roscommon</option>
+						<option value="sligo">Sligo</option>
+						<option value="tipperary">Tipperary</option>
+						<option value="tyrone">Tyrone</option>
+						<option value="waterford">Waterford</option>
+						<option value="westmeath">Westmeath</option>
+						<option value="wexford">Wexford</option>
+						<option value="wicklow">Wicklow</option>
+					</select>
+				</div>
+
+			</div>
+			<div class="formCon">
+
+				<div class="labelCon">
+				    <label for="msg" id="msgLab">* Message:</label>
+				    <textarea id="msg" class="msg" name="user_message"></textarea>
+				</div>
+
+				<br>
+
+				<div class="labelCon">
+				    <label for="newsLetter">Would you like to join our newsletter?</label>
+		  				<input class="radioB" type="radio" name="newsLetter" value="True" checked> Yes
+		  				<input class="radioB" type="radio" name="newsLetter" value="False"> No
+				</div>
+			</div>
+		</div>
+
+
+				 
+		<div class="button">
+			<button class="submitForm" onclick="return formValidateFunction()">Send</button>
+		</div>
+	</form>
+		
+		<footer>
+			<p>© 2018 Scuba, Copyright</p>
+		</footer>
+</body>
+</html>
